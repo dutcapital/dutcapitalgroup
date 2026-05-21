@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dut Capital — Modern Systems. Smarter Growth.</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230D0D0B'/%3E%3Ctext x='5' y='24' font-family='Georgia,serif' font-size='22' font-weight='300' fill='%23F4F2EE' letter-spacing='1'%3ED%3C/text%3E%3Cline x1='5' y1='27' x2='27' y2='27' stroke='%239A7B28' stroke-width='1.2'/%3E%3C/svg%3E">
@@ -10,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { color-scheme: light only; }
 
   :root {
     --white: #FAFAF8;
@@ -17,8 +19,8 @@
     --warm-white: #EDE9E1;
     --black: #0D0D0B;
     --charcoal: #1C1C1A;
-    --mid: #5C5A54;
-    --light-mid: #9A9690;
+    --mid: #6B6860;
+    --light-mid: #A8A49C;
     /* Darkened gold for better readability on light backgrounds */
     --gold: #7A6020;
     --gold-light: #B8891E;
@@ -31,7 +33,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--white);
+    background: #FAFAF8;
     color: var(--black);
     font-family: var(--sans);
     font-weight: 300;
@@ -55,27 +57,56 @@
     transition: padding 0.4s ease;
   }
 
-  .nav-logo { display: flex; flex-direction: column; gap: 2px; text-decoration: none; }
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-decoration: none;
+    line-height: 1;
+  }
 
   .nav-logo-name {
     font-family: var(--serif);
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
     color: var(--black);
     line-height: 1;
   }
 
   .nav-logo-sub {
+    font-family: var(--sans);
     font-size: 9px;
     font-weight: 300;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
+    letter-spacing: 0.42em;
     color: var(--gold);
     line-height: 1;
   }
 
-  .nav-logo svg { display: block; }
+  .footer-logo-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 1;
+  }
+
+  .footer-logo-name {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .footer-logo-sub {
+    font-family: var(--sans);
+    font-size: 8px;
+    font-weight: 300;
+    letter-spacing: 0.38em;
+    color: var(--gold);
+    line-height: 1;
+  }
 
   .nav-links { display: flex; align-items: center; gap: 40px; list-style: none; }
 
@@ -105,6 +136,7 @@
 
   /* HERO */
   .hero {
+    background: #FAFAF8;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -219,7 +251,7 @@
   }
 
   .hero-card {
-    background: var(--off-white);
+    background: #F4F2EE;
     border: 1px solid rgba(154,123,40,0.2);
     border-radius: 4px;
     padding: 52px;
@@ -275,7 +307,7 @@
   .marquee-wrap {
     border-top: 1px solid rgba(154,123,40,0.15);
     border-bottom: 1px solid rgba(154,123,40,0.15);
-    background: var(--gold-faint);
+    background: #FAF6EC;
     overflow: hidden;
     padding: 18px 0;
   }
@@ -302,6 +334,7 @@
 
   /* ABOUT */
   .about {
+    background: #FAFAF8;
     padding: 130px 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -367,7 +400,7 @@
   .about-right.visible { opacity: 1; transform: none; }
 
   .pillar-card {
-    background: var(--off-white);
+    background: #F4F2EE;
     border: 1px solid rgba(154,123,40,0.15);
     border-radius: 4px;
     padding: 32px 28px;
@@ -404,7 +437,7 @@
   /* WHO WE WORK WITH */
   .who {
     padding: 100px 60px;
-    background: var(--off-white);
+    background: #F4F2EE;
     border-top: 1px solid rgba(154,123,40,0.1);
   }
 
@@ -427,7 +460,7 @@
   }
 
   .who-card {
-    background: var(--white);
+    background: #FAFAF8;
     border: 1px solid rgba(154,123,40,0.15);
     border-radius: 4px;
     padding: 32px 28px;
@@ -587,8 +620,9 @@
 
   /* WHY DUT CAPITAL */
   .why {
+    background: #FAFAF8;
     padding: 120px 60px;
-    background: var(--white);
+    background: #FAFAF8;
     border-top: 1px solid rgba(154,123,40,0.1);
   }
 
@@ -612,12 +646,12 @@
   }
 
   .why-card {
-    background: var(--white);
+    background: #FAFAF8;
     padding: 52px 44px;
     transition: background 0.3s;
   }
 
-  .why-card:hover { background: var(--gold-faint); }
+  .why-card:hover { background: #FAF6EC; }
 
   .why-card-num {
     font-family: var(--serif);
@@ -647,7 +681,7 @@
   /* PROCESS */
   .process {
     padding: 130px 60px;
-    background: var(--off-white);
+    background: #F4F2EE;
   }
 
   .process-header {
@@ -670,7 +704,7 @@
   }
 
   .process-step {
-    background: var(--off-white);
+    background: #F4F2EE;
     padding: 52px 40px;
     position: relative;
     opacity: 0;
@@ -714,6 +748,7 @@
 
   /* CTA */
   .cta-section {
+    background: #FAFAF8;
     padding: 130px 60px;
     text-align: center;
     position: relative;
@@ -792,6 +827,7 @@
 
   /* CONTACT */
   .contact {
+    background: #FAFAF8;
     padding: 100px 60px 130px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -833,7 +869,7 @@
   }
 
   .form-input, .form-textarea {
-    background: var(--off-white);
+    background: #F4F2EE;
     border: 1px solid rgba(154,123,40,0.2);
     border-radius: 2px;
     padding: 14px 18px;
@@ -954,10 +990,8 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo" aria-label="Dut Capital home">
-    <svg viewBox="0 0 180 52" width="180" height="52" xmlns="http://www.w3.org/2000/svg">
-      <text x="0" y="38" font-family="Georgia,serif" font-size="38" font-weight="400" fill="#0D0D0B" letter-spacing="2">Dut</text>
-      <text x="2" y="50" font-family="Georgia,serif" font-size="14" font-weight="300" fill="#9A7B28" letter-spacing="8">CAPITAL</text>
-    </svg>
+    <span class="nav-logo-name">Dut</span>
+    <span class="nav-logo-sub">CAPITAL</span>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -1301,11 +1335,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <svg viewBox="0 0 160 48" width="140" height="48" xmlns="http://www.w3.org/2000/svg">
-      <text x="0" y="34" font-family="Georgia,serif" font-size="34" font-weight="400" fill="#FAFAF8" letter-spacing="2">Dut</text>
-      <text x="2" y="46" font-family="Georgia,serif" font-size="13" font-weight="300" fill="#9A7B28" letter-spacing="7">CAPITAL</text>
-    </svg>
-  <span class="footer-copy">© 2026 Dut Capital Group LLC. All rights reserved.</span>
+  <span class="footer-logo-wrap"><span class="footer-logo-name">Dut</span><span class="footer-logo-sub">CAPITAL</span></span>
+  <span class="footer-copy">© 2026 Dut Capital LLC. All rights reserved.</span>
   <ul class="footer-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
