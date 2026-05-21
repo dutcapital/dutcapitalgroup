@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dut Capital Group — Modern Systems. Smarter Growth.</title>
+<title>Dut Capital — Modern Systems. Smarter Growth.</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230D0D0B'/%3E%3Ctext x='5' y='24' font-family='Georgia,serif' font-size='22' font-weight='300' fill='%23F4F2EE' letter-spacing='1'%3ED%3C/text%3E%3Cline x1='5' y1='27' x2='27' y2='27' stroke='%239A7B28' stroke-width='1.2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
@@ -74,6 +75,8 @@
     line-height: 1;
   }
 
+  .nav-logo svg { display: block; }
+
   .nav-links { display: flex; align-items: center; gap: 40px; list-style: none; }
 
   .nav-links a {
@@ -106,7 +109,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 140px 60px 100px;
+    padding: 100px 60px 60px;
     position: relative;
     overflow: hidden;
   }
@@ -919,7 +922,7 @@
   @media (max-width: 900px) {
     nav { padding: 18px 24px; }
     .nav-links { display: none; }
-    .hero { grid-template-columns: 1fr; padding: 110px 24px 70px; }
+    .hero { grid-template-columns: 1fr; padding: 90px 24px 50px; }
     .hero-left { padding-right: 0; }
     .hero-right { display: none; }
     .about { grid-template-columns: 1fr; gap: 52px; padding: 80px 24px; }
@@ -950,9 +953,11 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">
-    <span class="nav-logo-name">Dut Capital Group</span>
-    <span class="nav-logo-sub">Modern Systems. Smarter Growth.</span>
+  <a href="#" class="nav-logo" aria-label="Dut Capital home">
+    <svg viewBox="0 0 180 52" width="180" height="52" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="38" font-family="Georgia,serif" font-size="38" font-weight="400" fill="#0D0D0B" letter-spacing="2">Dut</text>
+      <text x="2" y="50" font-family="Georgia,serif" font-size="14" font-weight="300" fill="#9A7B28" letter-spacing="8">CAPITAL</text>
+    </svg>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -1112,7 +1117,7 @@
 
   <div class="services-grid">
     <div class="service-item">
-      <div class="service-icon">◈</div>
+      <div class="service-icon">🤝</div>
       <div class="service-num">01</div>
       <div class="service-name">Business Consulting</div>
       <div class="service-desc">We look at how your business runs, find what's slowing you down, and build a clear plan to fix it and grow.</div>
@@ -1124,7 +1129,7 @@
       </div>
     </div>
     <div class="service-item">
-      <div class="service-icon">⟳</div>
+      <div class="service-icon">📊</div>
       <div class="service-num">02</div>
       <div class="service-name">CRM & Client Systems</div>
       <div class="service-desc">CRM setup, lead tracking, follow-up sequences, appointment booking, and client pipelines — so no lead falls through the cracks.</div>
@@ -1136,7 +1141,7 @@
       </div>
     </div>
     <div class="service-item">
-      <div class="service-icon">◻</div>
+      <div class="service-icon">🌐</div>
       <div class="service-num">03</div>
       <div class="service-name">Branding & Digital Presence</div>
       <div class="service-desc">Professional websites, business branding, social setup, and online positioning that makes people trust you before they even call.</div>
@@ -1148,7 +1153,7 @@
       </div>
     </div>
     <div class="service-item">
-      <div class="service-icon">⬡</div>
+      <div class="service-icon">⚙️</div>
       <div class="service-num">04</div>
       <div class="service-name">Business Technology</div>
       <div class="service-desc">Smart tools and integrated systems that improve how your business communicates, operates, and handles day-to-day tasks.</div>
@@ -1160,7 +1165,7 @@
       </div>
     </div>
     <div class="service-item">
-      <div class="service-icon">▣</div>
+      <div class="service-icon">🎨</div>
       <div class="service-num">05</div>
       <div class="service-name">Media & Content</div>
       <div class="service-desc">Brand visuals, social content, and creative direction that represent your business the right way and attract the right clients.</div>
@@ -1264,42 +1269,42 @@
         <span class="contact-row-label">New Clients</span>
         <a href="mailto:contact@dutcapitalgroup.com" class="contact-row-value">contact@dutcapitalgroup.com</a>
       </div>
-      <div class="contact-row">
-        <span class="contact-row-label">Location</span>
-        <span class="contact-row-value">Operating Across North America</span>
-      </div>
+
     </div>
   </div>
   <div>
-    <form class="contact-form" onsubmit="handleSubmit(event)">
+    <div data-fs-success style="display:none;padding:16px;background:#F0F7EC;border:1px solid #3B6D11;border-radius:2px;color:#2A5010;font-size:15px;font-family:'Outfit',sans-serif;font-weight:300;margin-bottom:16px;">Thanks! Your message was sent. We'll be in touch within 24 hours.</div><div data-fs-error style="display:none;padding:16px;background:#FCEAEA;border:1px solid #8B2020;border-radius:2px;color:#8B2020;font-size:15px;font-family:'Outfit',sans-serif;font-weight:300;margin-bottom:16px;">Something went wrong. Please try emailing us directly at contact@dutcapitalgroup.com</div><form class="contact-form" id="contact-form">
       <div class="form-group">
         <label class="form-label" for="name">Full Name</label>
-        <input class="form-input" type="text" id="name" placeholder="Your full name" required>
+        <input class="form-input" type="text" id="name" name="name" placeholder="Your full name" required>
       </div>
       <div class="form-group">
         <label class="form-label" for="email">Email Address</label>
-        <input class="form-input" type="email" id="email" placeholder="your@email.com" required>
+        <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required data-fs-field>
       </div>
       <div class="form-group">
         <label class="form-label" for="business">Business / Company</label>
-        <input class="form-input" type="text" id="business" placeholder="Your business name">
+        <input class="form-input" type="text" id="business" name="business" placeholder="Your business name">
       </div>
       <div class="form-group">
         <label class="form-label" for="service">What do you need help with?</label>
-        <input class="form-input" type="text" id="service" placeholder="e.g. Website, CRM, Branding, Strategy...">
+        <input class="form-input" type="text" id="service" name="service" placeholder="e.g. Website, CRM, Branding, Strategy...">
       </div>
       <div class="form-group">
         <label class="form-label" for="message">Tell us about your business</label>
-        <textarea class="form-textarea" id="message" rows="4" placeholder="What's your business, what are you working on, and what are you trying to achieve?"></textarea>
+        <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="What's your business, what are you working on, and what are you trying to achieve?" data-fs-field></textarea>
       </div>
-      <button type="submit" class="form-submit">Send Message →</button>
+      <button type="submit" class="form-submit" data-fs-submit-btn>Send Message →</button>
     </form>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <span class="footer-logo">Dut Capital Group</span>
+  <svg viewBox="0 0 160 48" width="140" height="48" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="34" font-family="Georgia,serif" font-size="34" font-weight="400" fill="#FAFAF8" letter-spacing="2">Dut</text>
+      <text x="2" y="46" font-family="Georgia,serif" font-size="13" font-weight="300" fill="#9A7B28" letter-spacing="7">CAPITAL</text>
+    </svg>
   <span class="footer-copy">© 2026 Dut Capital Group LLC. All rights reserved.</span>
   <ul class="footer-links">
     <li><a href="#about">About</a></li>
@@ -1333,24 +1338,14 @@
     observer.observe(el);
   });
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.form-submit');
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = '#3B6D11';
-    btn.style.borderColor = '#3B6D11';
-    setTimeout(() => {
-      btn.textContent = 'Send Message →';
-      btn.style.background = '';
-      btn.style.borderColor = '';
-      e.target.reset();
-    }, 3000);
-  }
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'xvzyavbe' });
 
   window.addEventListener('scroll', () => {
     document.querySelector('nav').style.padding =
       window.scrollY > 40 ? '14px 60px' : '22px 60px';
   });
 </script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
